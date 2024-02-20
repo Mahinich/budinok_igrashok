@@ -34,7 +34,7 @@
     <section class="hero">
       <div class="content-wrap container">
         <h1 class="title">
-          HELLO WORLD! My name is Ira
+          HELLO WORLD ! My name is Ira
         </h1>
         <p class="descr">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus tristique vulputate ultrices ut mauris tellus at. Posuere sollicitudin odio tellus elit.
@@ -56,7 +56,7 @@
                 <h3 class="item-title">Make Your business To Be Better Famous</h3>
                 <p class="item-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               </div>
-              <a href="" class="learn-more">Learn more</a>
+              <a href="#" class="learn-more">Learn more</a>
             </div>
             <div class="item">
               <img src="images/help-client/bring-technology.png" alt="item-im" class="item-img">
@@ -64,7 +64,7 @@
                 <h3 class="item-title">Bring Technology To Your</h3>
                 <p class="item-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
               </div>
-              <a href="" class="learn-more">Learn more</a>
+              <a href="#" class="learn-more">Learn more</a>
             </div>
             <div class="item">
               <img src="images/help-client/digital-product.png" alt="item-img" class="item-img">
@@ -72,52 +72,90 @@
                 <h3 class="item-title">Build Your Digital Product That Suitable</h3>
                 <p class="item-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               </div>
-              <a href="" class="learn-more">Learn more</a>
+              <a href="#" class="learn-more">Learn more</a>
             </div>
           </div>
         </div>
 
-        <form class="registration">
+        <form class="registration"">
           <fieldset class='data-units'>
             <legend>Registration</legend>
             <div class="data-unit">
+              <input class="input-data name" type="text" id="name" name="name" placeholder="You name" required>
               <label for="name">First name:</label>
-              <input class="data name" type="text" id="name" name="name" placeholder="You name" required>
             </div>
             
             <div class="data-unit">
+              <input class="input-data surname" type="text" id="surname" name="surname" placeholder="You surname" required>
               <label for="surname">Surname</label>
-              <input class="data surname" type="text" id="surname" name="surname" placeholder="You surname" required>
             </div>
             
             <div class="data-unit">
+              <input class="input-data phone" type="tel" id="phone" name="phone" placeholder="+3 8 ___ ___ __ __" pattern="[+]{1}[0-9]{5}[0-9]{3}[0-9]{4}" required>
               <label for="phone">Phone number</label>
-              <input class="data phone" type="tel" id="phone" name="phone" placeholder="+3 8 ___ ___ __ __" pattern="[+]{1}[0-9]{5}[0-9]{3}[0-9]{4}" required>
               <span>*Use only numbers</span>
             </div>
             
             <div class="data-unit">
-              <label for="email">Email</label>
-              <input class="data email" type="email" id="email" name="email" placeholder="Your email" required>
+              <input class="input-data email" type="email" id="email" name="email" placeholder="Your email" required>
+              <label class="email-label" for="email">Email</label>
+              <label class="error" for="email">Error</label>
               <span>*Use only latin letters and characters ._-@</span>
             </div>
           </fieldset>
-            <input type="checkbox"><span class="agreement">I agree with The Terms of Use and with The Privacy Policy</span>
-            <button class="btn" type="submit">Register me!</button>
+
+          <div class="checkbox-wrap">
+            <input id="checkbox" type="checkbox">
+            <label class="agreement" for="checkbox">I agree with The Terms of Use and with The Privacy Policy</label>
+          </div>
+          <button class="registr-me" type="submit">Register me!</button>
         </form>
       </div>
     </section>
 
     <section class="cta">
-      <div class="container">
-
-      </div>
+         <h2 class="title">Intersted to work
+          with our team?</h2>
+         <p class="descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+       <button class="btn" type="button">Lets talk</button>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container">
+      <div class="wrap">
+        <div class="contacts">
+          <div class="theme-switcher">
+            <span class="ellipse"></span>
+            <span class="letter"></span>
+          </div>
+          <ul class="list details">
+            <li class="item descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+            <li class="item phone"><a href="tel:+380912345678">+38 091 234 56 78</a></li>
+            <li class="item email"><a href="mailto:hello.ira@gmail.com">hello.ira@gmail.com</a></li>
+          </ul>
+        </div>
 
+        <div class="about-us">About US
+          <ul class="list about-us-list">
+            <li class="item"><a href="#">About</a></li>
+            <li class="item"><a href="#">What We Do</a></li>
+            <li class="item"><a href="#"></a>Project</li>
+            <li class="item"><a href="#"></a>How It Work With Us</li>
+          </ul>
+        </div>
+        
+        <div class="follow"> Follow
+          <ul class="list follow-list">
+            <li class="item"><a href="#">Instagram</a></li>
+            <li class="item"><a href="#">Facebook</a></li>
+            <li class="item"><a href="#">LinkedIn</a></li>
+            <li class="item"><a href="#">Youtube</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="legal">2019 © All rights reserved.</div>
     </div>
   </footer>
   <script src="js/script.js"></script>
